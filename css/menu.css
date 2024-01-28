@@ -1,0 +1,50 @@
+.header_box {
+  width: 20%;
+  height: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_box:nth-child(2) {
+  width: 60%;
+}
+.header_box span {
+  font: bold 1.5rem sans-serif;
+}
+h3 {
+  float: left;
+  margin-left: 2rem;
+  font: 1.09rem Calibri;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.header_box button {
+  padding: 10px;
+  width: 100px;
+  border-radius: 20px;
+  border: none;
+  background-color: #4a67ab;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 2px 2px 8px #4a67ab;
+}
+.header_box button:hover {
+  box-shadow: none;
+}
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 1.6px;
+  background: #4a67ab;
+  transition: width 0.3s;
+}
+.cool-link:hover::after {
+  width: 100%;
+}
